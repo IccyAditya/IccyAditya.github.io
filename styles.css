@@ -90,6 +90,16 @@ ul {
     text-decoration: underline;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+}
+
 /* Footer */
 footer {
     text-align: center;
@@ -98,7 +108,14 @@ footer {
     padding: 20px 0;
     border-top: 5px solid var(--primary-color);
     box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Normal flow of the document */
+    width: 100%;
 }
+
+#contact {
+    padding-bottom: 50px; /* Enough padding to avoid overlap */
+}
+
 
 /* Links */
 a {
